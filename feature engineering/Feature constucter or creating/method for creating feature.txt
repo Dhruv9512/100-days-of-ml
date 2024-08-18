@@ -1,0 +1,17 @@
+**** Feature creating steps from kaggle****
+
+1.  Think how to use numeric columns and make a new columns by doing mathematical operation like ratio,a+b/c.
+2.  From numeric columns make count of columns and display it in new column using gt() if >0 true otherwise false
+     eg:- df["numeric columns"].gt(0).sum(axis=1)
+3.  transform , here you do one hot encoding and * it with numeric column.
+    It is use when the one column is not effect the target column , but that clumn is effect by other column.
+    eg: new = pd.get_dummies("ct_col",prefix="cat")
+        new = new.mul("num_col",axis=0)
+
+4.  From group columns values , find each group mean and then make new column as per the group element and value.
+    eg:- df.groupby("cat_col")["num_col"].transform("mean")
+
+
+
+
+

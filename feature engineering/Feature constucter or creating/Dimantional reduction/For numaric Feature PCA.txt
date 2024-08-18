@@ -1,0 +1,2 @@
+=> PCA is a techniques which transform higher dimentional data to lower dimantional data with out changes it's behaviour.
+=> Number of PC <= Number of feature.
